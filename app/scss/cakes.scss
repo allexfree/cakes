@@ -1,0 +1,168 @@
+@import "vars";
+@import "mixins";
+
+.cakes {
+	position: relative;
+	padding-top: 18px;
+	padding-bottom: 37px;
+}
+
+.cakes__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 0 20px;
+}
+
+.cakes__title {
+	font-family: $font-one;
+	@include font-set(24px, normal, #2d2829);
+	margin-bottom: 24px;
+}
+
+.cakes__list {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.cakes__link {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 280px;
+	height: 120px;
+	padding: 10px 12px;
+	margin-bottom: 10px;
+	background-color: $color-four;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	font-family: $font-four;
+	color: $color-one;
+	line-height: 1.3;
+	text-decoration: none;
+	transition: all 0.3s;
+
+	& span {
+		@include font-set(12px, normal, rgba(45, 40, 41, 0.7));
+	}
+
+	&:hover,
+	&:active {
+		color: $color-one;
+		text-decoration: none;
+	}
+}
+
+.cakes__list .cakes__link:first-of-type {
+	background-image: url("../img/photo1@320-1x.jpg");
+
+	&:hover,
+	&:active {
+		background-image: url("../img/photo1hover@320-1x.jpg");
+	}
+}
+
+.cakes__list .cakes__link:nth-of-type(2) {
+	background-image: url("../img/photo2@320-1x.jpg");
+
+	&:hover,
+	&:active {
+		background-image: url("../img/photo2hover@320-1x.jpg");
+	}
+}
+
+.cakes__list .cakes__link:nth-of-type(3) {
+	background-image: url("../img/photo3@320-1x.jpg");
+
+	&:hover,
+	&:active {
+		background-image: url("../img/photo3hover@320-1x.jpg");
+	}
+}
+
+.cakes__list .cakes__link:nth-of-type(4) {
+	background-image: url("../img/photo4@320-1x.jpg");
+
+	&:hover,
+	&:active {
+		background-image: url("../img/photo4hover@320-1x.jpg");
+	}
+}
+
+.cakes__list .cakes__link:nth-of-type(5) {
+	background-image: url("../img/photo5@320-1x.jpg");
+
+	&:hover,
+	&:active {
+		background-image: url("../img/photo5hover@320-1x.jpg");
+	}
+}
+
+.cakes__list .cakes__link:last-of-type {
+	background-image: url("../img/photo6@320-1x.jpg");
+
+	&:hover,
+	&:active {
+		background-image: url("../img/photo6hover@320-1x.jpg");
+	}
+}
+
+@media (min-width: 320px) and (max-width: 767px) and (min-resolution: 144dpi),
+(min-width: 320px) and (max-width: 767px) and (min-resolution: 1.5dppx) {
+	.cakes__list .cakes__link:first-of-type {
+		background-image: url("../img/photo1@320-2x.jpg");
+
+		&:hover,
+		&:active {
+			background-image: url("../img/photo1hover@320-2x.jpg");
+		}
+	}
+
+	.cakes__list .cakes__link:nth-of-type(2) {
+		background-image: url("../img/photo2@320-2x.jpg");
+
+		&:hover,
+		&:active {
+			background-image: url("../img/photo2hover@320-2x.jpg");
+		}
+	}
+
+	.cakes__list .cakes__link:nth-of-type(3) {
+		background-image: url("../img/photo3@320-2x.jpg");
+
+		&:hover,
+		&:active {
+			background-image: url("../img/photo3hover@320-2x.jpg");
+		}
+	}
+
+	.cakes__list .cakes__link:nth-of-type(4) {
+		background-image: url("../img/photo4@320-2x.jpg");
+
+		&:hover,
+		&:active {
+			background-image: url("../img/photo4hover@320-2x.jpg");
+		}
+	}
+
+	.cakes__list .cakes__link:nth-of-type(5) {
+		background-image: url("../img/photo5@320-2x.jpg");
+
+		&:hover,
+		&:active {
+			background-image: url("../img/photo5hover@320-2x.jpg");
+		}
+	}
+
+	.cakes__list .cakes__link:last-of-type {
+		background-image: url("../img/photo6@320-2x.jpg");
+
+		&:hover,
+		&:active {
+			background-image: url("../img/photo6hover@320-2x.jpg");
+		}
+	}
+}

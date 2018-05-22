@@ -1,0 +1,5 @@
+@mixin font-set ($fsize, $fweight, $fcolor) {
+	font-size: $fsize;
+	font-weight: $fweight;
+	color: $fcolor;
+}

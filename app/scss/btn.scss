@@ -1,0 +1,37 @@
+@import "vars";
+@import "mixins";
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 226px;
+	height: 51px;
+	background-color: $color-five;
+	font-family: $font-four;
+	@include font-set(13px, normal, #ffffff);
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 25.5px;
+	border: none;
+	outline: none;
+	margin-left: 8px;
+	transition: all 0.3s;
+
+	&:hover,
+	&:active {
+		text-decoration: none;
+		color: $color-four;
+		box-shadow: 0 5px 10px rgba(245, 0, 73, 0.3);
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.btn--slider {
+	width: 179px;
+	height: 51px;
+	margin: 0 auto 15px auto;
+}

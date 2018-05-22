@@ -1,0 +1,31 @@
+$font-default: "Arial", "Helvetica", sans-serif;
+$font-one: "PlayfairDisplayBold", "TimesNewRoman", serif;
+$font-two: "PlayfairDisplayBoldItalic", "Arial", sans-serif;
+$font-three: "IntroScriptrH2Base", "Arial", sans-serif;
+$font-four: "Circe", "Arial", sans-serif;
+$accent: orange;
+
+//colors
+$color-one: #2d2829;
+$color-two: #fbebea;
+$color-three: #111111;
+$color-four: #ffffff;
+$color-five: #f50049;
+$color-six: #cccccc;
+$color-seven: #111111;
+$color-eight: #32313d;
+$color-ten: #717171;
+$color-eleven: #2f2f2f;
+$color-twelve: #dddddd;
+$color-thirteen: #e3353d;
+
+//sizes
+$fsize-default: 14px;
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+$gutter: $grid-gutter-width;

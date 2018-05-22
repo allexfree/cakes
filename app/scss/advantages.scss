@@ -1,0 +1,111 @@
+@import "vars";
+@import "mixins";
+
+.advantages {
+	margin-bottom: 157px;
+}
+
+.advantages__wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 320px;
+	padding: 0 20px;
+	margin: 0 auto;
+
+	&::after {
+		display: block;
+		width: 100%;
+		height: 452px;
+		position: absolute;
+		bottom: -443px;
+		left: 0;
+		content: "";
+		background-image: url("../img/adv-photo@320-1x.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		z-index: -5;
+	}
+}
+
+.advantages__header {
+	text-align: center;
+}
+
+.advantages__header + .advantages__block {
+	margin-bottom: 35px;
+}
+
+.advantages__head {
+	font-family: $font-one;
+	@include font-set(24px, bold, $color-one);
+	margin-bottom: 10px;
+}
+
+.advantages__title {
+	font-family: $font-three;
+	@include font-set(22px, normal, $color-eight);
+	line-height: 0.3;
+	margin-bottom: 23px;
+}
+
+.advantages__header + div {
+	background-color: $color-four;
+	margin: 0 -20px;
+	padding-top: 10px;
+}
+
+.advantages__block-text-descr > div {
+	margin-bottom: 8px;
+}
+
+.advantages__block-img {
+	display: none;
+}
+
+.advantages__block-text-descr {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	& div + div {
+		text-align: center;
+	}
+
+	& h3 {
+		font-family: $font-four;
+		@include font-set(16px, bold, $color-one);
+		margin-bottom: 0;
+	}
+
+	& p {
+		font-family: $font-four;
+		@include font-set(14px, normal, $color-one);
+		line-height: 1.3;
+		margin-bottom: 0;
+
+		& span {
+			display: block;
+		}
+	}
+
+	& h4 {
+		font-family: $font-one;
+	  @include font-set(24px, bold, $color-one);
+	  margin-bottom: 0;
+	}
+
+	& .advantages__block-text-descr-paragraph {
+		font-family: $font-three;
+		@include font-set(22px, normal, $color-eight);
+	}
+}
+
+@media (min-width: 320px) and (max-width: 767px) and (min-resolution: 144dpi),
+(min-width: 320px) and (max-width: 767px) and (min-resolution: 1.5dppx) {
+	.advantages__wrapper::after {
+		background-image: url("../img/adv-photo@320-2x.png");
+		background-size: 461px 452px;
+	}
+}

@@ -1,0 +1,12 @@
+@import "vars";
+@import "mixins";
+
+.logo {
+	font-family: $font-one;
+	@include font-set (16px, bold, #111111);
+
+	& a {
+		color: $color-three;
+		text-decoration: none;
+	}
+}
