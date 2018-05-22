@@ -1,1 +1,99 @@
 @import "vars";
+@import "mixins";
+
+
+.page-footer {
+	background-color: $color-fourteen;
+}
+
+.page-footer__wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 280px;
+	padding-top: 35px;
+	margin: 0 auto;
+}
+
+.page-footer__menu {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.page-footer__menu-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.page-footer__menu-link {
+	color: $color-four;
+	line-height: 2.3;
+
+	&:hover,
+	&:focus {
+		color: $color-four;
+	}
+}
+
+.page-footer__social {
+	margin-bottom: 23px;
+}
+
+.page-footer__social-lnk {
+	display: inline-block;
+	margin-right: 18px;
+	width: 23px;
+	height: 23px;
+
+	& svg {
+		fill: rgba(255, 255, 255, 0.4);
+		transition: all 0.5s;
+
+		& .vk {
+			fill: none;
+			stroke: rgba(255, 255, 255, 0.4);
+			stroke-width: 7%;
+			transition: all 0.5s;
+		}
+	}
+
+	&:hover svg,
+	&:active svg {
+		fill: rgba(255, 255, 255, 1);
+	}
+
+	&:hover svg .vk,
+	&:active svg .vk {
+		stroke: rgba(255, 255, 255, 1);
+	}
+}
+
+.page-footer__copyright {
+	margin-bottom: 28px;
+
+	& .page-footer__social {
+		display: none;
+	}
+}
+
+.page-footer__copyright {
+	position: relative;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+
+	& p {
+		@include font-set(12px, normal, rgba(255, 255, 255, 0.4));
+		margin-bottom: 0;
+	}
+
+	&:before {
+		display: block;
+		content: "";
+		width: 100%;
+		height: 1px;
+		background-color: rgba(255, 255, 255, 0.4);
+		margin-bottom: 5px;
+	}
+}

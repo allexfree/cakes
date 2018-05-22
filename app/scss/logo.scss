@@ -3,10 +3,19 @@
 
 .logo {
 	font-family: $font-one;
-	@include font-set (16px, bold, #111111);
+	@include font-set (16px, bold, $color-three);
 
 	& a {
 		color: $color-three;
 		text-decoration: none;
+	}
+}
+
+.logo--footer {
+	@include font-set (28px, bold, $color-four);
+	margin-bottom: 5px;
+
+	& a {
+		color: $color-four;
 	}
 }
