@@ -63,7 +63,7 @@
 		</div>
 	</header>
 	<main class="page-main">
-		<section class="cakes">
+		<section class="cakes" id="cakes">
 			<div class="cakes__wrapper">
 				<h2 class="cakes__title">Наши торты</h2>
 				<div class="cakes__list">
@@ -76,7 +76,7 @@
 				</div>
 			</div>
 		</section>
-		<form action="https://echo.htmlacademy.ru/" method="post" class="order">
+		<form action="https://echo.htmlacademy.ru/" method="post" class="order" id="order">
 			<div class="order__wrapper">
 				<h2 class="order__title">Индивидуальный<span>заказ</span></h2>
 				<p class="order__text">Соберите торт в 3 шага</p>
@@ -383,7 +383,7 @@
 													</div>
 												</form>
 
-												<section class="reviews">
+												<section class="reviews" id="reviews">
 													<div class="reviews__wrapper">
 														<h2 class="reviews__title">Отзывы</h2>
 														<div id="reviews__slider" class="reviews__slider"><!--slider-->
@@ -489,7 +489,7 @@
 														</div>
 													</section>
 
-													<section class="about">
+													<section class="about" id="about">
 														<div class="about__wrapper">
 															<h2 class="about__title">О нас</h2>
 															<div class="about__block">
@@ -598,7 +598,7 @@
 															</div>
 														</section>
 
-														<section class="how">
+														<section class="how" id="how">
 															<div class="how__wrapper">
 																<h2 class="how__title">Как заказать</h2>
 																<ul class="how__list">
@@ -617,28 +617,97 @@
 																</ul>
 															</div>
 														</section>
+
+														<section class="contacts" id="contacts">
+															<div class="contacts__wrapper">
+																<div class="contacts__header">
+																	<h2 class="contacts__title">Контакты</h2>
+																	<p class="contacts__text">Остались вопросы?</p>
+																</div>
+																<div class="contacts__block">
+																	<p class="contacts__block-text">Заполните форму ниже и наш кондитер свяжется с Вами</p>
+																	<form class="contacts__form" action="https://echo.htmlacademy.ru/" method="post">
+																		<input class="contacts__form-input" name="user-name" type="text" placeholder="Ваше имя" required>
+																		<input class="contacts__form-input" name="user-mail" type="text" placeholder="Email адрес" required>
+																		<textarea class="contacts__form-textarea" name="user-question" placeholder="Ваш вопрос"></textarea>
+																		<button class="btn btn--contacts">Отправить</button>
+																	</form>
+																</div>
+																<div class="contacts__block">
+																	<p class="contacts__block-tel">Или позвоните по телефону: <a href="tel:+79068999296" class="contacts__block-tel-link">+7 906 899 92 96</a></p>
+																	<p class="contacts__block-mail">Наша почта : <a class="contacts__block-mail-link" href="mailto:bakerybypavel@mail.ru">bakerybypavel@mail.ru</a></p>
+																	<div class="contacts__block-social">
+																		<p class="contacts__block-social-text">Мы в соц. сетях</p>
+																		<a href="#" class="contacts__block-social-link">
+																			<svg width="63" height="63">
+																				<g>
+																					<circle cx="31.5" cy="31.5" r="31.5" fill="#ffffff"/>
+																				</g>
+																				<g>
+																					<path d="M31.5,21.4c-5.4,0-10,4.4-10,10s4.4,10,10,10s10-4.5,10-10S37.1,21.4,31.5,21.4z M31.5,37.8
+																					c-3.5,0-6.3-3-6.3-6.3c0-3.5,3-6.3,6.3-6.3s6.3,3,6.3,6.3C38,34.8,35,37.8,31.5,37.8z" fill="#f50049"/>
+																					<circle class="circle" cx="42" cy="21.2" r="2.3" fill="#f50049"/>
+																					<path d="M47.8,15.4c-2.1-2.1-4.9-3.2-8.2-3.2H23.6c-6.8,0-11.4,4.6-11.4,11.2v15.9c0,3.3,1.1,6.1,3.3,8.4
+																					c2.1,1.9,4.9,3,8.1,3h15.9c3.3,0,6.1-1,8.2-3c2.1-1.9,3.1-4.9,3.1-8.2V23.4C50.8,20.1,49.7,17.5,47.8,15.4z M47.4,39.5
+																					c0,2.5-0.9,4.4-2.3,5.6s-3.3,1.9-5.6,1.9H23.6c-2.3,0-4.2-0.7-5.6-1.9c-1.4-1.4-2.1-3.3-2.1-5.8V23.5c0-2.3,0.7-4.2,2.1-5.6
+																					c1.2-1.2,3.3-1.9,5.6-1.9h15.9c2.3,0,4.2,0.7,5.6,2.1c1.2,1.4,2.1,3.3,2.1,5.6L47.4,39.5L47.4,39.5z" fill="#f50049"/>
+																				</g>
+																			</svg><!--end of instagramm-icon-->
+																		</a>
+																		<a href="#" class="contacts__block-social-link">
+																			<svg width="63" height="63">
+																				<g>
+																					<circle class="st0" cx="31.5" cy="31.5" r="31.5" fill="#ffffff"/>
+																				</g>
+																				<path class="st1" d="M50.9,20.3h-6.8c-0.5,0-1.1,0.3-1.4,0.9c0,0-2.8,5.1-3.7,6.8c-2.3,4.7-3.9,3.1-3.9,1.1v-7.4
+																				c0-1.2-1-2.3-2.3-2.3h-5.1c-1.4-0.4-2.8,0.3-3.7,1.6c0,0,2.6-0.4,2.6,3.1c0,0.9,0,3.5,0,5.6c0,0.9-0.7,1.6-1.4,1.6
+																				c-0.4,0-0.9-0.2-1.2-0.5c-2.1-3-3.8-6.3-5.3-9.6c0-0.5-0.5-0.9-1.2-0.9c-1.4,0-4.4,0-6.1,0c-0.5,0-1,0.5-1,1.1c0,0.2,0,0.2,0,0.3
+																				c1.9,5.4,10,22,19.2,22h3.9c0.9,0,1.6-0.7,1.6-1.6v-2.4c0-0.9,0.7-1.6,1.6-1.6c0.4,0,0.7,0.2,1,0.4l4.7,4.5c0.4,0.4,1.1,0.7,1.6,0.7
+																				h6.1c3,0,3-2.1,1.4-3.7c-1-1.2-5.3-5.6-5.3-5.6c-0.9-0.9-0.9-1.9-0.4-2.8c1.4-1.8,3.5-4.7,4.4-5.9C51.6,24,53.9,20.3,50.9,20.3z" fill="#f50049"/>
+																			</svg><!--end of vk-icon-->
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</section>
 													</main>
 													<footer class="page-footer">
-														<br>
-														<br>
-														<br>
-														<br>
-														<br>
-														<br>
-														<br>
-														<br>
-														<br>
-														<br>
-														<br>
-														<br>
-														<br>
-														<br>
-														<br>
-														<br>
-														<br>
-														<br>
-														<br>
-														<br>
+														<div class="logo logo--footer">
+															<a href="#" class="logo__link">Cakes</a>
+														</div>
+														<nav class="page-footer__menu">
+															<a class="page-footer__menu-link" href="#">Наши торты</a>
+															<a class="page-footer__menu-link" href="#">Индивидуальный заказ</a>
+															<a class="page-footer__menu-link" href="#">Отзывы</a>
+															<a class="page-footer__menu-link" href="#">О нас</a>
+															<a class="page-footer__menu-link" href="#">Как заказать</a>
+															<a class="page-footer__menu-link" href="#">Контакты</a>
+															<a class="page-footer__menu-link" href="tel:+79068999296">+79068999296</a>
+														</nav>
+														<div class="page-footer__social">
+															<a href="#" class="page-footer__social-link">
+																<svg width="23" height="23">
+																	<g>
+																		<path d="M11.4,5.4c-3.2,0-5.9,2.6-5.9,5.9s2.6,5.9,5.9,5.9s5.9-2.7,5.9-5.9S14.8,5.4,11.4,5.4z M11.4,15.2
+																		c-2.1,0-3.7-1.8-3.7-3.7c0-2.1,1.8-3.7,3.7-3.7s3.7,1.8,3.7,3.7C15.3,13.4,13.5,15.2,11.4,15.2z"/>
+																		<circle cx="17.7" cy="5.3" r="1.4"/>
+																		<path d="M21.1,1.9C19.9,0.6,18.2,0,16.2,0H6.8C2.7,0,0,2.7,0,6.7v9.5c0,2,0.6,3.6,2,5c1.2,1.1,2.9,1.8,4.8,1.8h9.5
+																		c2,0,3.6-0.6,4.9-1.8c1.2-1.1,1.9-2.9,1.9-4.9V6.7C22.9,4.7,22.3,3.1,21.1,1.9z M20.9,16.2c0,1.5-0.5,2.6-1.4,3.3
+																		c-0.8,0.7-2,1.1-3.3,1.1H6.8c-1.4,0-2.5-0.4-3.3-1.1c-0.8-0.8-1.2-2-1.2-3.4V6.7c0-1.4,0.4-2.5,1.2-3.3c0.7-0.7,2-1.1,3.3-1.1h9.5
+																		c1.4,0,2.5,0.4,3.3,1.2c0.7,0.8,1.2,2,1.2,3.3L20.9,16.2L20.9,16.2z"/>
+																	</g>
+																</svg>
+															</a>
+															<a href="#" class="page-footer__social-link">
+																<svg width="23" height="23">
+																	<path d="M22,5.4h-3.7c-0.3,0-0.6,0.2-0.8,0.5c0,0-1.5,2.8-2,3.7c-1.2,2.6-2.1,1.7-2.1,0.6v-4c0-0.7-0.6-1.2-1.2-1.2H9.4
+																	c-0.8-0.2-1.5,0.2-2,0.9c0,0,1.4-0.2,1.4,1.7c0,0.5,0,1.9,0,3.1c0,0.5-0.4,0.9-0.8,0.9c-0.2,0-0.5-0.1-0.7-0.3
+																	C6.3,9.5,5.3,7.7,4.6,5.8c0-0.3-0.3-0.5-0.7-0.5c-0.8,0-2.4,0-3.3,0C0.3,5.4,0,5.7,0,5.9C0,6,0,6,0,6.1c1,3,5.4,12,10.5,12h2.1
+																	c0.5,0,0.9-0.4,0.9-0.9V16c0-0.5,0.4-0.9,0.9-0.9c0.2,0,0.4,0.1,0.6,0.2l2.6,2.5c0.2,0.2,0.6,0.4,0.9,0.4h3.3c1.6,0,1.6-1.1,0.8-2
+																	c-0.6-0.7-2.9-3.1-2.9-3.1c-0.5-0.5-0.5-1-0.2-1.5c0.8-1,1.9-2.6,2.4-3.2C22.4,7.4,23.7,5.4,22,5.4z"/>
+																</svg>
+															</a>
+														</div>
 														<br>
 														<br>
 														<br>

@@ -30,8 +30,15 @@
 	}
 }
 
-.btn--slider {
+.btn--slider,
+.btn--contacts {
 	width: 179px;
 	height: 51px;
 	margin: 0 auto 15px auto;
+}
+
+.btn--contacts {
+	text-transform: none;
+	@include font-set(19px, normal, $color-four);
+	margin: 0 auto 27px auto;
 }
